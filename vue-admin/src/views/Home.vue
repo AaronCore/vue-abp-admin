@@ -4,36 +4,21 @@
     <el-header>
         <div>
             <!-- 黑马logo -->
-            <img src="../assets/logo.png" alt="">
+            <img src="../assets/home.png" alt />
             <!-- 顶部标题 -->
             <span>后台管理系统</span>
         </div>
-        <el-button type="info" @click="logout"> 退出 </el-button>
+        <el-button type="info" @click="logout">退出</el-button>
     </el-header>
     <!-- 页面主体区域 -->
     <el-container>
         <!-- 侧边栏 -->
-        <el-aside :width="isCollapse ? '54px' : '200px'">
+        <el-aside :width="isCollapse ? '70px' : '200px'">
             <div class="toggle-button" @click="toggleCollapse">|||</div>
             <!-- 侧边栏菜单 -->
             <el-menu background-color="#333744" text-color="#fff" active-text-color="#409EFF" unique-opened :collapse="isCollapse" :collapse-transition="false" router :default-active="activePath">
                 <!-- 一级菜单 -->
                 <el-submenu index="1">
-                    <!-- 一级菜单模板 -->
-                    <template slot="title">
-                        <i class="el-icon-location"></i>
-                        <span>导航一</span>
-                    </template>
-                    <!-- 二级子菜单 -->
-                    <el-menu-item index="/welcome" @click="saveNavState('/welcome')">
-                        <!-- 二级菜单模板 -->
-                        <template slot="title">
-                            <i class="el-icon-location"></i>
-                            <span>子菜单一</span>
-                        </template>
-                    </el-menu-item>
-                </el-submenu>
-                <el-submenu index="2">
                     <!-- 一级菜单模板 -->
                     <template slot="title">
                         <i class="el-icon-s-tools"></i>
@@ -48,7 +33,7 @@
                         </template>
                     </el-menu-item>
                 </el-submenu>
-                <el-submenu index="3">
+                <el-submenu index="2">
                     <!-- 一级菜单模板 -->
                     <template slot="title">
                         <i class="el-icon-s-custom"></i>
@@ -63,7 +48,7 @@
                         </template>
                     </el-menu-item>
                 </el-submenu>
-                <el-submenu index="4">
+                <el-submenu index="3">
                     <!-- 一级菜单模板 -->
                     <template slot="title">
                         <i class="el-icon-menu"></i>
@@ -93,7 +78,7 @@ export default {
     data() {
         return {
             isCollapse: false,
-            activePath: ''
+            activePath: '',
         }
     },
     methods: {
@@ -107,11 +92,11 @@ export default {
         saveNavState(activePath) {
             window.sessionStorage.setItem('activePath', activePath)
             this.activePath = activePath
-        }
+        },
     },
     created() {
         this.activePath = window.sessionStorage.getItem('activePath')
-    }
+    },
 }
 </script>
 
