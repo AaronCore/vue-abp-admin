@@ -10,24 +10,24 @@ import Role from './views/role/RoleList.vue'
 Vue.use(Router)
 
 const router = new Router({
-    routes: [
-        { path: '/', redirect: '/login' },
-        { path: '/login', component: Login },
-        {
-            path: '/home',
-            component: Home,
-            redirect: '/welcome',
-            children: [
-                { path: '/welcome', component: Welcome },
-                { path: '/account', component: Account },
-                { path: '/menu', component: Menu },
-                { path: '/role', component: Role },
-            ]
-        }
-    ]
+  routes: [
+    { path: '/', redirect: '/login' },
+    { path: '/login', component: Login },
+    {
+      path: '/home',
+      component: Home,
+      redirect: '/welcome',
+      children: [
+        { path: '/welcome', component: Welcome },
+        { path: '/account', component: Account },
+        { path: '/menu', component: Menu },
+        { path: '/role', component: Role }
+      ]
+    }
+  ]
 })
 
-/* 
+/*
 // 挂载路由导航守卫
 router.beforeEach((to, from, next) => {
     // to 将要访问的路径

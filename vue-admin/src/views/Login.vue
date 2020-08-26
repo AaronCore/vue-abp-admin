@@ -27,19 +27,19 @@
 
 <script>
 export default {
-    data() {
-        return {
+  data () {
+    return {
 
-        }
-    },
-    methods: {
-        login() {
-            this.$router.push('/home')
-        },
-        reset() {
-            alert('重置')
-        }
     }
+  },
+  methods: {
+    login () {
+      this.$router.push('/home')
+    },
+    reset () {
+      alert('重置')
+    }
+  }
 }
 </script>
 
