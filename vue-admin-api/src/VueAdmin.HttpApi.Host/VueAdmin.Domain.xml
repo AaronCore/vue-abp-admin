@@ -49,6 +49,16 @@
             创建人
             </summary>
         </member>
+        <member name="T:VueAdmin.Account.Repositories.IAccountRepository">
+            <summary>
+            IAccountRepository
+            </summary>
+        </member>
+        <member name="T:VueAdmin.Log.Repositories.ILogRepository">
+            <summary>
+            ILogRepository
+            </summary>
+        </member>
         <member name="P:VueAdmin.Menu.MenuEntity.ParentId">
             <summary>
             父级Id
@@ -102,6 +112,21 @@
         <member name="P:VueAdmin.Menu.MenuEntity.Creater">
             <summary>
             创建人
+            </summary>
+        </member>
+        <member name="T:VueAdmin.Menu.Repositories.IMenuRepository">
+            <summary>
+            IMenuRepository
+            </summary>
+        </member>
+        <member name="T:VueAdmin.Role.Repositories.IRoleMenuRepository">
+            <summary>
+            IRoleMenuRepository
+            </summary>
+        </member>
+        <member name="T:VueAdmin.Role.Repositories.IRoleRepository">
+            <summary>
+            IRoleRepository
             </summary>
         </member>
         <member name="P:VueAdmin.Role.RoleEntity.Name">
