@@ -1,10 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using VueAdmin.Users;
 using Volo.Abp.Data;
 using Volo.Abp.EntityFrameworkCore;
-using Volo.Abp.EntityFrameworkCore.Modeling;
-using Volo.Abp.Identity;
-using Volo.Abp.Users.EntityFrameworkCore;
 
 namespace VueAdmin.EntityFrameworkCore
 {
@@ -20,14 +16,7 @@ namespace VueAdmin.EntityFrameworkCore
     [ConnectionStringName("Default")]
     public class VueAdminDbContext : AbpDbContext<VueAdminDbContext>
     {
-        public DbSet<AppUser> Users { get; set; }
-
-        /* Add DbSet properties for your Aggregate Roots / Entities here.
-         * Also map them inside VueAdminDbContextModelCreatingExtensions.ConfigureVueAdmin
-         */
-
-        public VueAdminDbContext(DbContextOptions<VueAdminDbContext> options)
-            : base(options)
+        public VueAdminDbContext(DbContextOptions<VueAdminDbContext> options) : base(options)
         {
 
         }
@@ -38,21 +27,26 @@ namespace VueAdmin.EntityFrameworkCore
 
             /* Configure the shared tables (with included modules) here */
 
-            builder.Entity<AppUser>(b =>
-            {
-                b.ToTable(AbpIdentityDbProperties.DbTablePrefix + "Users"); //Sharing the same table "AbpUsers" with the IdentityUser
-                
-                b.ConfigureByConvention();
-                b.ConfigureAbpUser();
+            //builder.Entity<AppUser>(b =>
+            //{
+            //    b.ToTable(AbpIdentityDbProperties.DbTablePrefix + "Users"); //Sharing the same table "AbpUsers" with the IdentityUser
 
-                /* Configure mappings for your additional properties
-                 * Also see the VueAdminEfCoreEntityExtensionMappings class
-                 */
-            });
+            //    b.ConfigureByConvention();
+
+            //    /* Configure mappings for your additional properties
+            //     * Also see the VueAdminEfCoreEntityExtensionMappings class
+            //     */
+            //});
 
             /* Configure your own tables/entities inside the ConfigureVueAdmin method */
 
             builder.ConfigureVueAdmin();
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            base.OnConfiguring(optionsBuilder);
+            optionsBuilder.EnableSensitiveDataLogging();
         }
     }
 }

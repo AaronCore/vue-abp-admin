@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using VueAdmin.Localization;
-using Volo.Abp.Application.Services;
+﻿using Volo.Abp.Application.Services;
 
 namespace VueAdmin
 {
@@ -10,9 +6,6 @@ namespace VueAdmin
      */
     public abstract class VueAdminAppService : ApplicationService
     {
-        protected VueAdminAppService()
-        {
-            LocalizationResource = typeof(VueAdminResource);
-        }
+
     }
 }

@@ -5,8 +5,6 @@ using Microsoft.Extensions.Configuration;
 
 namespace VueAdmin.EntityFrameworkCore
 {
-    /* This class is needed for EF Core console commands
-     * (like Add-Migration and Update-Database commands) */
     public class VueAdminMigrationsDbContextFactory : IDesignTimeDbContextFactory<VueAdminMigrationsDbContext>
     {
         public VueAdminMigrationsDbContext CreateDbContext(string[] args)

@@ -4,12 +4,17 @@ using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Autofac;
 using Volo.Abp.Modularity;
+using VueAdmin.EntityFrameworkCore;
+using VueAdmin.Swagger;
 
 namespace VueAdmin
 {
     [DependsOn(
         typeof(AbpAspNetCoreMvcModule),
-        typeof(AbpAutofacModule)
+        typeof(AbpAutofacModule),
+        typeof(VueAdminHttpApiModule),
+        typeof(VueAdminSwaggerModule),
+        typeof(VueAdminEntityFrameworkCoreModule)
     )]
     public class VueAdminHttpApiHostModule : AbpModule
     {

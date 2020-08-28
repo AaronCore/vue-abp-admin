@@ -1,7 +1,6 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using Serilog;
 
 namespace VueAdmin
 {
@@ -9,7 +8,7 @@ namespace VueAdmin
     {
         public static async Task Main(string[] args)
         {
-            CreateHostBuilder(args).Build().RunAsync();
+            await CreateHostBuilder(args).Build().RunAsync();
         }
 
         internal static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -18,7 +17,6 @@ namespace VueAdmin
                 {
                     webBuilder.UseStartup<Startup>();
                 })
-                .UseAutofac()
-                .UseSerilog();
+                .UseAutofac();
     }
 }

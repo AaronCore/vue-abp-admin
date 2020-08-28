@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VueAdmin.Domain</name>
+    </assembly>
+    <members>
+        <member name="P:VueAdmin.Account.AccountEntity.Account">
+            <summary>
+            登录账号
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Account.AccountEntity.Password">
+            <summary>
+            登录密码
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Account.AccountEntity.RoleId">
+            <summary>
+            角色Id
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Account.AccountEntity.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Account.AccountEntity.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Account.AccountEntity.EditTime">
+            <summary>
+            编辑时间
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Account.AccountEntity.Editor">
+            <summary>
+            编辑人
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Account.AccountEntity.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Account.AccountEntity.Creater">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Menu.MenuEntity.ParentId">
+            <summary>
+            父级Id
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Menu.MenuEntity.Name">
+            <summary>
+            菜单名称
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Menu.MenuEntity.Path">
+            <summary>
+            菜单地址
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Menu.MenuEntity.Code">
+            <summary>
+            菜单编码
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Menu.MenuEntity.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Menu.MenuEntity.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Menu.MenuEntity.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Menu.MenuEntity.EditTime">
+            <summary>
+            编辑时间
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Menu.MenuEntity.Editor">
+            <summary>
+            编辑人
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Menu.MenuEntity.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Menu.MenuEntity.Creater">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Role.RoleEntity.Name">
+            <summary>
+            角色名称
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Role.RoleEntity.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Role.RoleEntity.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Role.RoleEntity.EditTime">
+            <summary>
+            编辑时间
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Role.RoleEntity.Editor">
+            <summary>
+            编辑人
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Role.RoleEntity.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Role.RoleEntity.Creater">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="F:VueAdmin.Settings.VueAdminSettings._config">
+            <summary>
+            配置文件的根节点
+            </summary>
+        </member>
+        <member name="M:VueAdmin.Settings.VueAdminSettings.#cctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Settings.VueAdminSettings.EnableDb">
+            <summary>
+            EnableDb
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Settings.VueAdminSettings.ConnectionStrings">
+            <summary>
+            ConnectionStrings
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Settings.VueAdminSettings.ApiVersion">
+            <summary>
+            ApiVersion
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Settings.VueAdminSettings.ListenPort">
+            <summary>
+            监听端口
+            </summary>
+        </member>
+        <member name="T:VueAdmin.Settings.VueAdminSettings.Caching">
+            <summary>
+            Caching
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Settings.VueAdminSettings.Caching.RedisConnectionString">
+            <summary>
+            RedisConnectionString
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Settings.VueAdminSettings.Caching.IsOpen">
+            <summary>
+            是否开启
+            </summary>
+        </member>
+    </members>
+</doc>

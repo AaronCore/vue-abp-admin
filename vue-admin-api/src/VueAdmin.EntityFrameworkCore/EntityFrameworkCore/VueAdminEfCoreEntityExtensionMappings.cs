@@ -10,8 +10,6 @@ namespace VueAdmin.EntityFrameworkCore
 
         public static void Configure()
         {
-            VueAdminModulePropertyConfigurator.Configure();
-            
             OneTimeRunner.Run(() =>
             {
                 /* You can configure entity extension properties for the
