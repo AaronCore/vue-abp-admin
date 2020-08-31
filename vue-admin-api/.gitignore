@@ -250,11 +250,3 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
-
-# VueAdmin
-src/VueAdmin.Web/Logs/*
-src/VueAdmin.Web.Host/Logs/*
-src/VueAdmin.IdentityServer/Logs/*
-src/VueAdmin.HttpApi.Host/Logs/*
-src/VueAdmin.HttpApi.Host/Logs/*
-src/VueAdmin.DbMigrator/Logs/*

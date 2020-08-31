@@ -3,9 +3,7 @@
 	<Import Project="..\..\common.props" />
 
 	<PropertyGroup>
-		<TargetFramework>netstandard2.0</TargetFramework>
-		<RootNamespace>VueAdmin</RootNamespace>
-		<GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+		<TargetFramework>netstandard2.1</TargetFramework>
 	</PropertyGroup>
 
 	<ItemGroup>

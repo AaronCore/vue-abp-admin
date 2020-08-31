@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc;
+using VueAdmin.Common.Base;
 using VueAdmin.Log;
 
 namespace VueAdmin.Controllers
@@ -18,10 +19,10 @@ namespace VueAdmin.Controllers
 
         [HttpPost]
         [Route("addLog")]
-        public async Task<string> AddLogAsync([FromBody] LogDto dto)
+        public async Task<ServiceResult> AddLogAsync([FromBody] LogDto dto)
         {
-            await _logService.AddAsync(dto);
-            return "ok";
+            var result = await _logService.AddAsync(dto);
+            return result;
         }
     }
 }
