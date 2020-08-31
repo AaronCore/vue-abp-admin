@@ -10,6 +10,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.7" />
 		<PackageReference Include="Volo.Abp.Autofac" Version="3.0.5" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5" />
 	</ItemGroup>
@@ -19,6 +20,7 @@
 		<ProjectReference Include="..\VueAdmin.EntityFrameworkCore.DbMigrations\VueAdmin.EntityFrameworkCore.DbMigrations.csproj" />
 		<ProjectReference Include="..\VueAdmin.EntityFrameworkCore\VueAdmin.EntityFrameworkCore.csproj" />
 		<ProjectReference Include="..\VueAdmin.HttpApi\VueAdmin.HttpApi.csproj" />
+		<ProjectReference Include="..\VueAdmin.Jobs\VueAdmin.Jobs.csproj" />
 		<ProjectReference Include="..\VueAdmin.Swagger\VueAdmin.Swagger.csproj" />
 	</ItemGroup>
 

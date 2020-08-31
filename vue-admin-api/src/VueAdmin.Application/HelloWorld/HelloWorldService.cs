@@ -4,7 +4,7 @@ using System.Text;
 
 namespace VueAdmin.HelloWorld
 {
-    public class HelloWorldService : VueAdminAppService, IHelloWorldService
+    public class HelloWorldService : VueAdminApplicationService, IHelloWorldService
     {
         public string HelloWorld()
         {

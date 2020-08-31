@@ -6,6 +6,7 @@ namespace VueAdmin.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [ApiExplorerSettings(GroupName = VueAdminConsts.Grouping.GroupName_v3)]
     public class HelloWorldController : AbpController
     {
         private readonly IHelloWorldService _helloWorldService;

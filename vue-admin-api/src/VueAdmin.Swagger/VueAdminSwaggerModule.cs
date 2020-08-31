@@ -4,7 +4,9 @@ using Volo.Abp.Modularity;
 
 namespace VueAdmin.Swagger
 {
-    [DependsOn(typeof(VueAdminDomainModule))]
+    [DependsOn(
+        typeof(VueAdminDomainModule))
+    ]
     public class VueAdminSwaggerModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)

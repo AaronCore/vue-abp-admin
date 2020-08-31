@@ -4,7 +4,7 @@ namespace VueAdmin
 {
     /* Inherit your application services from this class.
      */
-    public abstract class VueAdminAppService : ApplicationService
+    public abstract class VueAdminApplicationService : ApplicationService
     {
 
     }

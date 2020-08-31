@@ -7,7 +7,7 @@ using VueAdmin.Log.Repositories;
 
 namespace VueAdmin.Log
 {
-    public class LogService : VueAdminAppService, ILogService
+    public class LogService : VueAdminApplicationService, ILogService
     {
         private readonly ILogRepository _logRepository;
 

@@ -8,6 +8,7 @@ namespace VueAdmin.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [ApiExplorerSettings(GroupName = VueAdminConsts.Grouping.GroupName_v1)]
     public class LogController : AbpController
     {
         private readonly ILogService _logService;

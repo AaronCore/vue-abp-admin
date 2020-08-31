@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<Import Project="..\..\common.props" />
 
 	<PropertyGroup>
-		<TargetFramework>netstandard2.0</TargetFramework>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
 		<RootNamespace>VueAdmin</RootNamespace>
 	</PropertyGroup>
 
@@ -12,7 +12,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\VueAdmin.Domain.Shared\VueAdmin.Domain.Shared.csproj" />
+		<ProjectReference Include="..\VueAdmin.Domain\VueAdmin.Domain.csproj" />
 	</ItemGroup>
 
 </Project>

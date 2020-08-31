@@ -1,6 +1,9 @@
-﻿using System;
+﻿using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.Caching.Redis;
+using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.Caching;
 using Volo.Abp.Modularity;
+using VueAdmin.Configurations;
 
 namespace VueAdmin.Application.Caching
 {
@@ -12,7 +15,18 @@ namespace VueAdmin.Application.Caching
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
-            base.ConfigureServices(context);
+            if (AppSettings.Caching.IsOpen)
+            {
+                context.Services.AddStackExchangeRedisCache(options =>
+                {
+                    options.Configuration = AppSettings.Caching.RedisConnectionString;
+                });
+
+                var csredis = new CSRedis.CSRedisClient(AppSettings.Caching.RedisConnectionString);
+                RedisHelper.Initialization(csredis);
+
+                context.Services.AddSingleton<IDistributedCache>(new CSRedisCache(RedisHelper.Instance));
+            }
         }
     }
 }
