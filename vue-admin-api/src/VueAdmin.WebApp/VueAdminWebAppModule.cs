@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Volo.Abp;
@@ -10,10 +6,9 @@ using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Autofac;
 using Volo.Abp.Identity;
 using Volo.Abp.Modularity;
-using VueAdmin;
 using VueAdmin.EntityFrameworkCore;
 
-namespace Vue.Admin.WebApp
+namespace VueAdmin.WebApp
 {
     [DependsOn(
         typeof(AbpAspNetCoreMvcModule),

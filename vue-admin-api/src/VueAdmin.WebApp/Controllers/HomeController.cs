@@ -1,10 +1,12 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Vue.Admin.WebApp.Models;
 using VueAdmin.HelloWorld;
+using VueAdmin.WebApp.Models;
 
-namespace Vue.Admin.WebApp.Controllers
+namespace VueAdmin.WebApp.Controllers
 {
     public class HomeController : Controller
     {

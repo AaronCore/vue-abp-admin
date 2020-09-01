@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace Vue.Admin.WebApp
+namespace VueAdmin.WebApp
 {
     public class Program
     {

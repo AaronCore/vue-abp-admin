@@ -1,6 +1,6 @@
 using System;
 
-namespace Vue.Admin.WebApp.Models
+namespace VueAdmin.WebApp.Models
 {
     public class ErrorViewModel
     {

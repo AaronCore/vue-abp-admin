@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace Vue.Admin.WebApp
+namespace VueAdmin.WebApp
 {
     public class Startup
     {
