@@ -4,7 +4,7 @@
 
 	<PropertyGroup>
 		<TargetFramework>netcoreapp3.1</TargetFramework>
-		<RootNamespace>VueAdmin.Application.Caching</RootNamespace>
+		<RootNamespace>VueAdmin</RootNamespace>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -21,6 +21,10 @@
 		<ProjectReference Include="..\VueAdmin.Common\VueAdmin.Common.csproj" />
 		<ProjectReference Include="..\VueAdmin.Domain.Shared\VueAdmin.Domain.Shared.csproj" />
 		<ProjectReference Include="..\VueAdmin.Domain\VueAdmin.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="EventHandlers\" />
 	</ItemGroup>
 
 </Project>

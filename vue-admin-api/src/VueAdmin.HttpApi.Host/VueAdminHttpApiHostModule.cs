@@ -29,8 +29,8 @@ namespace VueAdmin
         typeof(AbpAutofacModule),
         typeof(VueAdminHttpApiModule),
         typeof(VueAdminSwaggerModule),
-        typeof(VueAdminEntityFrameworkCoreModule),
-        typeof(VueAdminJobsModule)
+        typeof(VueAdminEntityFrameworkCoreModule)
+    //typeof(VueAdminJobsModule)
     )]
     public class VueAdminHttpApiHostModule : AbpModule
     {

@@ -4,7 +4,7 @@ using VueAdmin.Common.Base;
 
 namespace VueAdmin.Application.Caching.Authorize
 {
-    public interface IAuthorizeCacheService
+    public interface IAuthorizeCacheService : ICacheRemoveService
     {
         /// <summary>
         /// 获取登录地址(GitHub)

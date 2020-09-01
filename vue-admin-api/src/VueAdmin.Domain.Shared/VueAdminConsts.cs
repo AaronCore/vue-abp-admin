@@ -111,16 +111,6 @@ namespace VueAdmin
         public static class CachePrefix
         {
             public const string Authorize = "Authorize";
-
-            public const string VueAdmin = "VueAdmin";
-
-            public const string VueAdmin_Post = VueAdmin + ":Post";
-
-            public const string VueAdmin_Tag = VueAdmin + ":Tag";
-
-            public const string VueAdmin_Category = VueAdmin + ":Category";
-
-            public const string VueAdmin_FriendLink = VueAdmin + ":FriendLink";
         }
     }
 }

@@ -31,6 +31,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VueAdmin.Jobs", "src\VueAdm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VueAdmin.WebApp", "src\VueAdmin.WebApp\VueAdmin.WebApp.csproj", "{26454DFD-5E9A-49DA-A2BD-EAF9767B03B6}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VueAdmin.Application.EventBus", "src\VueAdmin.Application.EventBus\VueAdmin.Application.EventBus.csproj", "{12D3BDBF-99B1-430E-9F8B-C25731BD560D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -89,6 +91,10 @@ Global
 		{26454DFD-5E9A-49DA-A2BD-EAF9767B03B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26454DFD-5E9A-49DA-A2BD-EAF9767B03B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26454DFD-5E9A-49DA-A2BD-EAF9767B03B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12D3BDBF-99B1-430E-9F8B-C25731BD560D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12D3BDBF-99B1-430E-9F8B-C25731BD560D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12D3BDBF-99B1-430E-9F8B-C25731BD560D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12D3BDBF-99B1-430E-9F8B-C25731BD560D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -107,6 +113,7 @@ Global
 		{A8BD1260-5AB9-468E-830A-A9172DB9B214} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
 		{9EC23081-A3AA-49BC-9C65-44F29D3CAAB7} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
 		{26454DFD-5E9A-49DA-A2BD-EAF9767B03B6} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
+		{12D3BDBF-99B1-430E-9F8B-C25731BD560D} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28315BFD-90E7-4E14-A2EA-F3D23AF4126F}

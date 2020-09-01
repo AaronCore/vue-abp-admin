@@ -79,6 +79,11 @@
             ConnectionStrings
             </summary>
         </member>
+        <member name="T:VueAdmin.Configurations.AppSettings.RabbitMQ">
+            <summary>
+            RabbitMQ
+            </summary>
+        </member>
         <member name="T:VueAdmin.Configurations.AppSettings.GitHub">
             <summary>
             GitHub
