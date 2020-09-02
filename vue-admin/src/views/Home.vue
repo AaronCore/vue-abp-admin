@@ -63,6 +63,21 @@
                         </template>
                     </el-menu-item>
                 </el-submenu>
+                <el-submenu index="4">
+                    <!-- 一级菜单模板 -->
+                    <template slot="title">
+                        <i class="el-icon-folder"></i>
+                        <span>组件</span>
+                    </template>
+                    <!-- 二级子菜单 -->
+                    <el-menu-item index="/editor" @click="saveNavState('/editor')">
+                        <!-- 二级菜单模板 -->
+                        <template slot="title">
+                            <i class="el-icon-s-grid"></i>
+                            <span>富文本编辑器</span>
+                        </template>
+                    </el-menu-item>
+                </el-submenu>
             </el-menu>
         </el-aside>
         <!-- 主体结构 -->
@@ -75,28 +90,28 @@
 
 <script>
 export default {
-  data () {
-    return {
-      isCollapse: false,
-      activePath: ''
-    }
-  },
-  methods: {
-    logout () {
-      window.sessionStorage.clear()
-      this.$router.push('/login')
+    data() {
+        return {
+            isCollapse: false,
+            activePath: ''
+        }
     },
-    toggleCollapse () {
-      this.isCollapse = !this.isCollapse
+    methods: {
+        logout() {
+            window.sessionStorage.clear()
+            this.$router.push('/login')
+        },
+        toggleCollapse() {
+            this.isCollapse = !this.isCollapse
+        },
+        saveNavState(activePath) {
+            window.sessionStorage.setItem('activePath', activePath)
+            this.activePath = activePath
+        }
     },
-    saveNavState (activePath) {
-      window.sessionStorage.setItem('activePath', activePath)
-      this.activePath = activePath
+    created() {
+        this.activePath = window.sessionStorage.getItem('activePath')
     }
-  },
-  created () {
-    this.activePath = window.sessionStorage.getItem('activePath')
-  }
 }
 </script>
 
