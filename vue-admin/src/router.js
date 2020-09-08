@@ -11,22 +11,22 @@ import Editor from './views/editor/EditorList.vue'
 Vue.use(Router)
 
 const router = new Router({
-    routes: [
-        { path: '/', redirect: '/login' },
-        { path: '/login', component: Login },
-        {
-            path: '/home',
-            component: Home,
-            redirect: '/welcome',
-            children: [
-                { path: '/welcome', component: Welcome },
-                { path: '/account', component: Account },
-                { path: '/menu', component: Menu },
-                { path: '/role', component: Role },
-                { path: '/editor', component: Editor }
-            ]
-        }
-    ]
+  routes: [
+    { path: '/', redirect: '/login' },
+    { path: '/login', component: Login },
+    {
+      path: '/home',
+      component: Home,
+      redirect: '/welcome',
+      children: [
+        { path: '/welcome', component: Welcome },
+        { path: '/account', component: Account },
+        { path: '/menu', component: Menu },
+        { path: '/role', component: Role },
+        { path: '/editor', component: Editor }
+      ]
+    }
+  ]
 })
 
 /*

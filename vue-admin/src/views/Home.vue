@@ -90,28 +90,28 @@
 
 <script>
 export default {
-    data() {
-        return {
-            isCollapse: false,
-            activePath: ''
-        }
-    },
-    methods: {
-        logout() {
-            window.sessionStorage.clear()
-            this.$router.push('/login')
-        },
-        toggleCollapse() {
-            this.isCollapse = !this.isCollapse
-        },
-        saveNavState(activePath) {
-            window.sessionStorage.setItem('activePath', activePath)
-            this.activePath = activePath
-        }
-    },
-    created() {
-        this.activePath = window.sessionStorage.getItem('activePath')
+  data () {
+    return {
+      isCollapse: false,
+      activePath: ''
     }
+  },
+  methods: {
+    logout () {
+      window.sessionStorage.clear()
+      this.$router.push('/login')
+    },
+    toggleCollapse () {
+      this.isCollapse = !this.isCollapse
+    },
+    saveNavState (activePath) {
+      window.sessionStorage.setItem('activePath', activePath)
+      this.activePath = activePath
+    }
+  },
+  created () {
+    this.activePath = window.sessionStorage.getItem('activePath')
+  }
 }
 </script>
 

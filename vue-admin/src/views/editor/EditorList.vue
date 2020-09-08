@@ -9,16 +9,16 @@
 
 <script>
 export default {
-    data() {
-        return {
-            introduce: ''
-        }
-    },
-    methods: {
-        add() {
-            console.log(this.introduce)
-        }
+  data () {
+    return {
+      introduce: ''
     }
+  },
+  methods: {
+    add () {
+      console.log(this.introduce)
+    }
+  }
 }
 </script>
 

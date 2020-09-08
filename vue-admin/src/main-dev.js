@@ -22,13 +22,14 @@ import 'quill/dist/quill.bubble.css'
 axios.defaults.baseURL = 'http://127.0.0.1:6060/'
 
 axios.interceptors.request.use(config => {
-    NProgress.start()
-    config.headers.Authorization = window.sessionStorage.getItem('token')
-    return config
+  NProgress.start()
+  config.headers.Authorization = window.sessionStorage.getItem('token')
+  return config
 })
+
 axios.interceptors.response.use(config => {
-    NProgress.done()
-    return config
+  NProgress.done()
+  return config
 })
 
 Vue.prototype.$http = axios
@@ -38,6 +39,6 @@ Vue.config.productionTip = false
 Vue.use(VueQuillEditor)
 
 new Vue({
-    router,
-    render: h => h(App)
+  router,
+  render: h => h(App)
 }).$mount('#app')
