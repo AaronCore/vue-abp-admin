@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using VueAdmin.Application.Contracts.Logging;
@@ -16,6 +17,24 @@ namespace VueAdmin.Application.Logging
         public LogService(ILogRepository logRepository)
         {
             _logRepository = logRepository;
+        }
+
+        /// <summary>
+        /// 列表
+        /// </summary>
+        /// <param name="pageIndex">分页下标</param>
+        /// <param name="pageSize">分页大小</param>
+        /// <returns></returns>
+        public async Task<ServiceResult<PagedList<LogOut>>> QueryList(int pageIndex, int pageSize)
+        {
+            var result = new ServiceResult<PagedList<LogOut>>();
+
+            var total = await _logRepository.GetCountAsync();
+            var logs = _logRepository.OrderByDescending(p => p.CreateTime).PageByIndex(pageIndex, pageSize);
+            var list = ObjectMapper.Map<IEnumerable<LogEntity>, IEnumerable<LogOut>>(logs);
+
+            result.IsSuccess(new PagedList<LogOut>(total.TryToInt(), list.ToList()));
+            return result;
         }
 
         /// <summary>
@@ -49,21 +68,6 @@ namespace VueAdmin.Application.Logging
             var logOut = ObjectMapper.Map<LogEntity, LogOut>(log);
 
             result.IsSuccess(logOut);
-            return result;
-        }
-
-        public ServiceResult<PagedList<LogOut>> QueryList(int pageIndex, int pageSize)
-        {
-            var result = new ServiceResult<PagedList<LogOut>>();
-
-            var list = _logRepository.OrderByDescending(p => p.CreateTime).PageByIndex(pageIndex, pageSize).Select(p => new LogOut
-            {
-                Id = p.Id.ToString(),
-
-            }).ToList();
-
-
-            result.IsSuccess(new PagedList<LogOut>(1, null));
             return result;
         }
     }

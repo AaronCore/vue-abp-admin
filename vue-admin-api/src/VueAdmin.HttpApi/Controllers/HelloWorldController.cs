@@ -5,6 +5,9 @@ using VueAdmin.Domain.Shared;
 
 namespace VueAdmin.HttpApi.Controllers
 {
+    /// <summary>
+    /// 公共接口
+    /// </summary>
     [ApiController]
     [Route("[controller]")]
     [ApiExplorerSettings(GroupName = VueAdminConsts.Grouping.GroupName_v3)]

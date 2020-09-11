@@ -8,6 +8,9 @@ using VueAdmin.Domain.Shared;
 
 namespace VueAdmin.HttpApi.Controllers
 {
+    /// <summary>
+    /// Log接口
+    /// </summary>
     [ApiController]
     [Route("[controller]")]
     [ApiExplorerSettings(GroupName = VueAdminConsts.Grouping.GroupName_v1)]
@@ -18,6 +21,20 @@ namespace VueAdmin.HttpApi.Controllers
         public LogController(ILogService logService)
         {
             _logService = logService;
+        }
+
+        /// <summary>
+        /// 列表
+        /// </summary>
+        /// <param name="pageIndex">分页下标</param>
+        /// <param name="pageSize">分页大小</param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("query")]
+        public async Task<ServiceResult> QueryListAsync(int pageIndex, int pageSize)
+        {
+            var result = await _logService.QueryList(pageIndex, pageSize);
+            return result;
         }
 
         /// <summary>
@@ -43,20 +60,6 @@ namespace VueAdmin.HttpApi.Controllers
         public async Task<ServiceResult> GetLogAsync(string id)
         {
             var result = await _logService.GetLog(id);
-            return result;
-        }
-
-        /// <summary>
-        /// 列表
-        /// </summary>
-        /// <param name="pageIndex">分页下标</param>
-        /// <param name="pageSize">分页大小</param>
-        /// <returns></returns>
-        [HttpGet]
-        [Route("query")]
-        public ServiceResult QueryList(int pageIndex, int pageSize)
-        {
-            var result = _logService.QueryList(pageIndex, pageSize);
             return result;
         }
     }

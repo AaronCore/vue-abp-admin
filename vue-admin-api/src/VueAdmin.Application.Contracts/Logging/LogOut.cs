@@ -8,6 +8,6 @@ namespace VueAdmin.Application.Contracts.Logging
         public string Message { get; set; }
         public string Exception { get; set; }
         public string StackTrace { get; set; }
-        public DateTime CreateTime { get; set; }
+        public string CreateTime { get; set; }
     }
 }

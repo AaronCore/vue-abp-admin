@@ -8,6 +8,9 @@ using VueAdmin.Domain.Shared;
 
 namespace VueAdmin.HttpApi.Controllers
 {
+    /// <summary>
+    /// 授权接口
+    /// </summary>
     [ApiController]
     [AllowAnonymous]
     [Route("[controller]")]

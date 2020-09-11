@@ -4,5 +4,105 @@
         <name>VueAdmin.Application.Contracts</name>
     </assembly>
     <members>
+        <member name="P:VueAdmin.Application.Contracts.Menu.MenuInput.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Application.Contracts.Menu.MenuInput.ParentId">
+            <summary>
+            父级Id
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Application.Contracts.Menu.MenuInput.Name">
+            <summary>
+            菜单名称
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Application.Contracts.Menu.MenuInput.Path">
+            <summary>
+            菜单地址
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Application.Contracts.Menu.MenuInput.Code">
+            <summary>
+            菜单编码
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Application.Contracts.Menu.MenuInput.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Application.Contracts.Menu.MenuInput.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Application.Contracts.Menu.MenuInput.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Application.Contracts.Menu.MenuOut.Id">
+            <summary>
+            主键Id
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Application.Contracts.Menu.MenuOut.ParentId">
+            <summary>
+            父级Id
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Application.Contracts.Menu.MenuOut.Name">
+            <summary>
+            菜单名称
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Application.Contracts.Menu.MenuOut.Path">
+            <summary>
+            菜单地址
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Application.Contracts.Menu.MenuOut.Code">
+            <summary>
+            菜单编码
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Application.Contracts.Menu.MenuOut.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Application.Contracts.Menu.MenuOut.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Application.Contracts.Menu.MenuOut.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Application.Contracts.Menu.MenuOut.EditTime">
+            <summary>
+            编辑时间
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Application.Contracts.Menu.MenuOut.Editor">
+            <summary>
+            编辑人
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Application.Contracts.Menu.MenuOut.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Application.Contracts.Menu.MenuOut.Creater">
+            <summary>
+            创建人
+            </summary>
+        </member>
     </members>
 </doc>
