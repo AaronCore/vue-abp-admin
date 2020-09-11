@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using VueAdmin.Common.Base.Paged;
 
 namespace VueAdmin.Common.Base

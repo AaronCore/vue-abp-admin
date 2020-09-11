@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Volo.Abp;
 using Volo.Abp.Modularity;
+using VueAdmin.Domain;
 
 namespace VueAdmin.Swagger
 {

@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace VueAdmin.Migrations
+namespace VueAdmin.EntityFrameworkCore.DbMigrations.Migrations
 {
     public partial class Initial : Migration
     {

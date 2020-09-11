@@ -1,11 +1,11 @@
 ﻿using System;
 using Volo.Abp.Domain.Repositories.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore;
-using VueAdmin.EntityFrameworkCore;
-using VueAdmin.Menu;
-using VueAdmin.Menu.Repositories;
+using VueAdmin.Domain.Menu;
+using VueAdmin.Domain.Menu.Repositories;
+using VueAdmin.EntityFrameworkCore.EntityFrameworkCore;
 
-namespace VueAdmin.Repositories.Menu
+namespace VueAdmin.EntityFrameworkCore.Repositories.Menu
 {
     public class MenuRepository : EfCoreRepository<VueAdminDbContext, MenuEntity, Guid>, IMenuRepository
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using Volo.Abp.Domain.Repositories;
 
-namespace VueAdmin.Role.Repositories
+namespace VueAdmin.Domain.Role.Repositories
 {
     /// <summary>
     /// IRoleRepository

@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using VueAdmin.Common.Base;
 
-namespace VueAdmin.Authorize
+namespace VueAdmin.Application.Authorize
 {
     public interface IAuthorizeService
     {

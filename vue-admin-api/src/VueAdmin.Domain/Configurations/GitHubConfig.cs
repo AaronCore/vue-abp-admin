@@ -1,4 +1,4 @@
-﻿namespace VueAdmin.Configurations
+﻿namespace VueAdmin.Domain.Configurations
 {
     public class GitHubConfig
     {

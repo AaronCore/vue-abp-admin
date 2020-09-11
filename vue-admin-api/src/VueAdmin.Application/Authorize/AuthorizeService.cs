@@ -11,9 +11,9 @@ using VueAdmin.Application.Caching.Authorize;
 using VueAdmin.Common.Base;
 using VueAdmin.Common.Extensions;
 using VueAdmin.Common.GitHub;
-using VueAdmin.Configurations;
+using VueAdmin.Domain.Configurations;
 
-namespace VueAdmin.Authorize
+namespace VueAdmin.Application.Authorize
 {
     public class AuthorizeService : VueAdminApplicationService, IAuthorizeService
     {

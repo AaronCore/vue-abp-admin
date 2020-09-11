@@ -1,4 +1,4 @@
-﻿namespace VueAdmin
+﻿namespace VueAdmin.Domain.Shared
 {
     public class DbTableName
     {

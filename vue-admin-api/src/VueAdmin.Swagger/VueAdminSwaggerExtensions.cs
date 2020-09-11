@@ -6,7 +6,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
 using Swashbuckle.AspNetCore.SwaggerUI;
-using VueAdmin.Configurations;
+using VueAdmin.Domain.Configurations;
+using VueAdmin.Domain.Shared;
 using VueAdmin.Swagger.Filters;
 
 namespace VueAdmin.Swagger

@@ -1,7 +1,7 @@
 ﻿using Volo.Abp.Identity;
 using Volo.Abp.Modularity;
 
-namespace VueAdmin
+namespace VueAdmin.Domain.Shared
 {
     [DependsOn(
         typeof(AbpIdentityDomainSharedModule)

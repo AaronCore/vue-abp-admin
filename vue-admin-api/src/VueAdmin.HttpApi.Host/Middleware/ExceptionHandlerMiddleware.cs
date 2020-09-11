@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Http;
 using VueAdmin.Common.Base;
 using VueAdmin.Common.Extensions;
 
-namespace VueAdmin.Middleware
+namespace VueAdmin.HttpApi.Host.Middleware
 {
     /// <summary>
     /// 异常处理中间件

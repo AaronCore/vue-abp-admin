@@ -3,7 +3,8 @@ using Volo.Abp.Domain.Entities.Events.Distributed;
 using Volo.Abp.EventBus.RabbitMq;
 using Volo.Abp.Modularity;
 using Volo.Abp.RabbitMQ;
-using VueAdmin.Configurations;
+using VueAdmin.Domain;
+using VueAdmin.Domain.Configurations;
 
 namespace VueAdmin.Application.EventBus
 {

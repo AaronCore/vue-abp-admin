@@ -11,18 +11,18 @@ namespace VueAdmin.Common.Base
         /// <summary>
         /// 返回结果
         /// </summary>
-        public T Result { get; set; }
+        public T Data { get; set; }
 
         /// <summary>
         /// 响应成功
         /// </summary>
-        /// <param name="result"></param>
+        /// <param name="data"></param>
         /// <param name="message"></param>
-        public void IsSuccess(T result = null, string message = "")
+        public void IsSuccess(T data = null, string message = "")
         {
             Message = message;
             Code = ServiceResultCode.Succeed;
-            Result = result;
+            Data = data;
         }
     }
 }

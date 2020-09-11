@@ -126,7 +126,7 @@ namespace VueAdmin.Common.Extensions
         /// <returns></returns>
         public static DateTime TryToDateTime(this string inputStr, DateTime defaultValue = default)
         {
-            if (inputStr.IsNullOrEmpty())
+            if (StringExtensions.IsNullOrEmpty(inputStr))
                 return defaultValue;
 
             return DateTime.TryParse(inputStr, out var outPutDateTime) ? outPutDateTime : defaultValue;
@@ -141,7 +141,7 @@ namespace VueAdmin.Common.Extensions
         /// <returns></returns>
         public static DateTime TryToDateTime(this string inputStr, string formater, DateTime defaultValue = default)
         {
-            if (inputStr.IsNullOrEmpty())
+            if (StringExtensions.IsNullOrEmpty(inputStr))
                 return defaultValue;
 
             return DateTime.TryParseExact(inputStr, formater, CultureInfo.InvariantCulture, DateTimeStyles.None, out var outPutDateTime) ? outPutDateTime : defaultValue;
@@ -177,7 +177,7 @@ namespace VueAdmin.Common.Extensions
         /// <returns></returns>
         public static string TryToTrim(this string inputStr)
         {
-            var output = inputStr.IsNullOrEmpty() ? inputStr : inputStr.Trim();
+            var output = StringExtensions.IsNullOrEmpty(inputStr) ? inputStr : inputStr.Trim();
             return output;
         }
 

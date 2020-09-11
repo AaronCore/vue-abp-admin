@@ -1,7 +1,7 @@
 ﻿using System;
 using Volo.Abp.Domain.Entities;
 
-namespace VueAdmin.Account
+namespace VueAdmin.Domain.Account
 {
     public class AccountEntity : Entity<Guid>
     {

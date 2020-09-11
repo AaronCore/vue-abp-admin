@@ -1,6 +1,6 @@
 ﻿using Volo.Abp.Application.Services;
 
-namespace VueAdmin
+namespace VueAdmin.Application
 {
     /* Inherit your application services from this class.
      */

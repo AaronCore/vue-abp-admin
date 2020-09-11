@@ -6,7 +6,8 @@ using Volo.Abp;
 using Volo.Abp.BackgroundJobs.Hangfire;
 using Volo.Abp.Modularity;
 using VueAdmin.Application.Contracts;
-using VueAdmin.Configurations;
+using VueAdmin.Domain.Configurations;
+using VueAdmin.Domain.Shared;
 
 namespace VueAdmin.Jobs
 {

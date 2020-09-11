@@ -1,7 +1,7 @@
 ﻿using System;
 using Volo.Abp.Domain.Entities;
 
-namespace VueAdmin.Menu
+namespace VueAdmin.Domain.Menu
 {
     public class MenuEntity : Entity<Guid>
     {

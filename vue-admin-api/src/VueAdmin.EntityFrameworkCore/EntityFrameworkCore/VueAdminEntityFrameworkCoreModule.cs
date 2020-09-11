@@ -2,8 +2,9 @@
 using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.SqlServer;
 using Volo.Abp.Modularity;
+using VueAdmin.Domain;
 
-namespace VueAdmin.EntityFrameworkCore
+namespace VueAdmin.EntityFrameworkCore.EntityFrameworkCore
 {
     [DependsOn(
         typeof(VueAdminDomainModule),

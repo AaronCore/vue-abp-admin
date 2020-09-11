@@ -4,31 +4,53 @@
         <name>VueAdmin.HttpApi</name>
     </assembly>
     <members>
-        <member name="M:VueAdmin.Controllers.AuthController.GetLoginAddressAsync">
+        <member name="M:VueAdmin.HttpApi.Controllers.AuthController.GetLoginAddressAsync">
             <summary>
             获取登录地址(GitHub)
             </summary>
             <returns></returns>
         </member>
-        <member name="M:VueAdmin.Controllers.AuthController.GetAccessTokenAsync(System.String)">
+        <member name="M:VueAdmin.HttpApi.Controllers.AuthController.GetAccessTokenAsync(System.String)">
             <summary>
             获取AccessToken
             </summary>
             <param name="code"></param>
             <returns></returns>
         </member>
-        <member name="M:VueAdmin.Controllers.AuthController.GenerateTokenAsync(System.String)">
+        <member name="M:VueAdmin.HttpApi.Controllers.AuthController.GenerateTokenAsync(System.String)">
             <summary>
             登录成功，生成Token
             </summary>
             <param name="access_token"></param>
             <returns></returns>
         </member>
-        <member name="M:VueAdmin.Controllers.AuthController.VerifyToken(System.String)">
+        <member name="M:VueAdmin.HttpApi.Controllers.AuthController.VerifyToken(System.String)">
             <summary>
             验证Token是否合法
             </summary>
             <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VueAdmin.HttpApi.Controllers.LogController.AddLogAsync(VueAdmin.Application.Contracts.Logging.LogInput)">
+            <summary>
+            添加Log
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VueAdmin.HttpApi.Controllers.LogController.GetLogAsync(System.String)">
+            <summary>
+            获取Log
+            </summary>
+            <param name="id">主键Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:VueAdmin.HttpApi.Controllers.LogController.QueryList(System.Int32,System.Int32)">
+            <summary>
+            列表
+            </summary>
+            <param name="pageIndex">分页下标</param>
+            <param name="pageSize">分页大小</param>
             <returns></returns>
         </member>
     </members>

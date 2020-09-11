@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using VueAdmin.HelloWorld;
+using VueAdmin.Application.HelloWorld;
 using VueAdmin.WebApp.Models;
 
 namespace VueAdmin.WebApp.Controllers

@@ -15,14 +15,13 @@ using Volo.Abp.Autofac;
 using Volo.Abp.Modularity;
 using VueAdmin.Common.Base;
 using VueAdmin.Common.Extensions;
-using VueAdmin.Configurations;
-using VueAdmin.EntityFrameworkCore;
-using VueAdmin.Filters;
-using VueAdmin.Jobs;
-using VueAdmin.Middleware;
+using VueAdmin.Domain.Configurations;
+using VueAdmin.EntityFrameworkCore.EntityFrameworkCore;
+using VueAdmin.HttpApi.Host.Filters;
+using VueAdmin.HttpApi.Host.Middleware;
 using VueAdmin.Swagger;
 
-namespace VueAdmin
+namespace VueAdmin.HttpApi.Host
 {
     [DependsOn(
         typeof(AbpAspNetCoreMvcModule),

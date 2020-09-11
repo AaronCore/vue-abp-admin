@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using VueAdmin.Common.Base;
 using VueAdmin.Common.Extensions;
+using VueAdmin.Domain.Shared;
 
 namespace VueAdmin.Application.Caching.Authorize
 {

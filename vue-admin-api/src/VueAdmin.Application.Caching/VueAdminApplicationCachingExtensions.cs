@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Microsoft.Extensions.Caching.Distributed;
 using VueAdmin.Common.Extensions;
+using VueAdmin.Domain.Shared;
 
 namespace VueAdmin.Application.Caching
 {

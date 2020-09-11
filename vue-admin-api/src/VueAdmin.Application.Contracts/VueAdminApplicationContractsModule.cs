@@ -1,4 +1,5 @@
 ﻿using Volo.Abp.Modularity;
+using VueAdmin.Domain;
 
 namespace VueAdmin.Application.Contracts
 {

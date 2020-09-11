@@ -4,7 +4,7 @@
 
 	<PropertyGroup>
 		<TargetFramework>netcoreapp3.1</TargetFramework>
-		<RootNamespace>VueAdmin</RootNamespace>
+		<RootNamespace>VueAdmin.Domain.Shared</RootNamespace>
 	</PropertyGroup>
 
 	<ItemGroup>

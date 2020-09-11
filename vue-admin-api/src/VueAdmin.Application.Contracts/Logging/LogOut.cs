@@ -1,10 +1,10 @@
 ﻿using System;
-using Volo.Abp.Domain.Entities;
 
-namespace VueAdmin.Domain.Logging
+namespace VueAdmin.Application.Contracts.Logging
 {
-    public class LogEntity : Entity<Guid>
+    public class LogOut
     {
+        public string Id { get; set; }
         public string Message { get; set; }
         public string Exception { get; set; }
         public string StackTrace { get; set; }

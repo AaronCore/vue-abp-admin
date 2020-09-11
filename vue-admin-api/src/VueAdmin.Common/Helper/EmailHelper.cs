@@ -2,7 +2,7 @@
 using MimeKit;
 using System.Linq;
 using System.Threading.Tasks;
-using VueAdmin.Configurations;
+using VueAdmin.Domain.Configurations;
 
 namespace VueAdmin.Common.Helper
 {

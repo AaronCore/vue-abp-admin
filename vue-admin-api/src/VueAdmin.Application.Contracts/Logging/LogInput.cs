@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace VueAdmin.Log
+namespace VueAdmin.Application.Contracts.Logging
 {
-    public class LogDto
+    public class LogInput
     {
         public string Message { get; set; }
         public string Exception { get; set; }

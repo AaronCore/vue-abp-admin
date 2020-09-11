@@ -2,9 +2,8 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using VueAdmin.Common.Extensions;
-using VueAdmin.Configurations;
 
-namespace VueAdmin
+namespace VueAdmin.HttpApi.Host
 {
     public class Program
     {
@@ -14,7 +13,7 @@ namespace VueAdmin
         }
 
         internal static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
+            Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(args)
                 .UseLog4Net()
                 .ConfigureWebHostDefaults(webBuilder =>
                 {

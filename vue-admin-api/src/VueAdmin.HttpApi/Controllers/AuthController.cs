@@ -2,10 +2,11 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc;
-using VueAdmin.Authorize;
+using VueAdmin.Application.Authorize;
 using VueAdmin.Common.Base;
+using VueAdmin.Domain.Shared;
 
-namespace VueAdmin.Controllers
+namespace VueAdmin.HttpApi.Controllers
 {
     [ApiController]
     [AllowAnonymous]

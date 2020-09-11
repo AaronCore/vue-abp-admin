@@ -1,11 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Volo.Abp;
-using VueAdmin.Account;
-using VueAdmin.Log;
-using VueAdmin.Menu;
-using VueAdmin.Role;
+using VueAdmin.Domain.Account;
+using VueAdmin.Domain.Logging;
+using VueAdmin.Domain.Menu;
+using VueAdmin.Domain.Role;
+using VueAdmin.Domain.Shared;
 
-namespace VueAdmin.EntityFrameworkCore
+namespace VueAdmin.EntityFrameworkCore.EntityFrameworkCore
 {
     public static class VueAdminDbContextModelCreatingExtensions
     {

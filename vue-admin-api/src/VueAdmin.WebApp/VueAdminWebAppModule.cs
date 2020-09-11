@@ -6,7 +6,9 @@ using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Autofac;
 using Volo.Abp.Identity;
 using Volo.Abp.Modularity;
+using VueAdmin.Application;
 using VueAdmin.EntityFrameworkCore;
+using VueAdmin.EntityFrameworkCore.EntityFrameworkCore;
 
 namespace VueAdmin.WebApp
 {

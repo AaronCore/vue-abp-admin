@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc;
-using VueAdmin.HelloWorld;
+using VueAdmin.Application.HelloWorld;
+using VueAdmin.Domain.Shared;
 
-namespace VueAdmin.Controllers
+namespace VueAdmin.HttpApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]

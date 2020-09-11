@@ -1,7 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.Modularity;
+using VueAdmin.EntityFrameworkCore.EntityFrameworkCore;
 
-namespace VueAdmin.EntityFrameworkCore
+namespace VueAdmin.EntityFrameworkCore.DbMigrations.EntityFrameworkCore
 {
     [DependsOn(
         typeof(VueAdminEntityFrameworkCoreModule)

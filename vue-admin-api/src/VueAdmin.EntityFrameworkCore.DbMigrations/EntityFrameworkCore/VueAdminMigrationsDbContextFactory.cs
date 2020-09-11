@@ -2,8 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
+using VueAdmin.EntityFrameworkCore.EntityFrameworkCore;
 
-namespace VueAdmin.EntityFrameworkCore
+namespace VueAdmin.EntityFrameworkCore.DbMigrations.EntityFrameworkCore
 {
     public class VueAdminMigrationsDbContextFactory : IDesignTimeDbContextFactory<VueAdminMigrationsDbContext>
     {

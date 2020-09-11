@@ -1,4 +1,4 @@
-﻿using VueAdmin.Configurations;
+﻿using VueAdmin.Domain.Configurations;
 
 namespace VueAdmin.Common.GitHub
 {

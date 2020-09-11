@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace VueAdmin
+﻿namespace VueAdmin.Domain.Shared
 {
     /// <summary>
     /// 全局常量

@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using Microsoft.Extensions.Configuration;
 
-namespace VueAdmin.Configurations
+namespace VueAdmin.Domain.Configurations
 {
     /// <summary>
     /// appsettings.json配置文件数据读取类

@@ -3,7 +3,8 @@ using Microsoft.Extensions.Caching.Redis;
 using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.Caching;
 using Volo.Abp.Modularity;
-using VueAdmin.Configurations;
+using VueAdmin.Domain;
+using VueAdmin.Domain.Configurations;
 
 namespace VueAdmin.Application.Caching
 {

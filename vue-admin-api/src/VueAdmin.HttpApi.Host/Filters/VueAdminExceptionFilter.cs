@@ -1,7 +1,7 @@
 ﻿using log4net;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace VueAdmin.Filters
+namespace VueAdmin.HttpApi.Host.Filters
 {
     public class VueAdminExceptionFilter : IExceptionFilter
     {

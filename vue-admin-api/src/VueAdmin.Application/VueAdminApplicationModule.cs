@@ -3,7 +3,7 @@ using Volo.Abp.Identity;
 using Volo.Abp.Modularity;
 using VueAdmin.Application.Caching;
 
-namespace VueAdmin
+namespace VueAdmin.Application
 {
     [DependsOn(
         typeof(AbpIdentityApplicationModule),

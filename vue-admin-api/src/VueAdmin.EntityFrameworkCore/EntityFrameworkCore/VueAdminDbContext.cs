@@ -2,7 +2,7 @@
 using Volo.Abp.Data;
 using Volo.Abp.EntityFrameworkCore;
 
-namespace VueAdmin.EntityFrameworkCore
+namespace VueAdmin.EntityFrameworkCore.EntityFrameworkCore
 {
     /* This is your actual DbContext used on runtime.
      * It includes only your entities.

@@ -1,8 +1,6 @@
-﻿using Volo.Abp.Identity;
-using Volo.Abp.ObjectExtending;
-using Volo.Abp.Threading;
+﻿using Volo.Abp.Threading;
 
-namespace VueAdmin.EntityFrameworkCore
+namespace VueAdmin.EntityFrameworkCore.EntityFrameworkCore
 {
     public static class VueAdminEfCoreEntityExtensionMappings
     {

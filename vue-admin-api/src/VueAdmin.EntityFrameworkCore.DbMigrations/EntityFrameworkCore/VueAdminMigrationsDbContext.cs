@@ -1,7 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore;
+using VueAdmin.EntityFrameworkCore.EntityFrameworkCore;
 
-namespace VueAdmin.EntityFrameworkCore
+namespace VueAdmin.EntityFrameworkCore.DbMigrations.EntityFrameworkCore
 {
     public class VueAdminMigrationsDbContext : AbpDbContext<VueAdminMigrationsDbContext>
     {

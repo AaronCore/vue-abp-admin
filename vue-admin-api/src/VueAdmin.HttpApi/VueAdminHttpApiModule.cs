@@ -1,7 +1,8 @@
 ﻿using Volo.Abp.Identity;
 using Volo.Abp.Modularity;
+using VueAdmin.Application;
 
-namespace VueAdmin
+namespace VueAdmin.HttpApi
 {
     [DependsOn(
         typeof(AbpIdentityHttpApiModule),
