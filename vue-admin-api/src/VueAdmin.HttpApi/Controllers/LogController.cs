@@ -38,19 +38,6 @@ namespace VueAdmin.HttpApi.Controllers
         }
 
         /// <summary>
-        /// 添加Log
-        /// </summary>
-        /// <param name="dto"></param>
-        /// <returns></returns>
-        [HttpPost]
-        [Route("addLog")]
-        public async Task<ServiceResult> AddLogAsync([FromBody] LogInput input)
-        {
-            var result = await _logService.AddAsync(input);
-            return result;
-        }
-
-        /// <summary>
         /// 获取Log
         /// </summary>
         /// <param name="id">主键Id</param>

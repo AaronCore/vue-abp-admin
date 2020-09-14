@@ -45,7 +45,6 @@ namespace VueAdmin.Application.System.Menu
             return result;
         }
 
-
         /// <summary>
         /// 添加
         /// </summary>
@@ -118,6 +117,24 @@ namespace VueAdmin.Application.System.Menu
             var result = new ServiceResult<MenuOut>();
 
             await _menuRepository.DeleteAsync(p => ids.Contains(p.Id.ToString()), true);
+
+            result.IsSuccess();
+            return result;
+        }
+
+        /// <summary>
+        /// 修改状态
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="enabled"></param>
+        /// <returns></returns>
+        public async Task<ServiceResult> EditEnabledAsync(string id, bool enabled)
+        {
+            var result = new ServiceResult<MenuOut>();
+
+            var entity = await _menuRepository.FindAsync(p => p.Id.ToString() == id);
+            entity.Enabled = enabled;
+            await _menuRepository.UpdateAsync(entity, true);
 
             result.IsSuccess();
             return result;

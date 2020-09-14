@@ -1,26 +1,26 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc;
-using VueAdmin.Application.Contracts.System.Menu;
-using VueAdmin.Application.System.Menu;
+using VueAdmin.Application.Contracts.System.Role;
+using VueAdmin.Application.System.Role;
 using VueAdmin.Common.Base;
 using VueAdmin.Domain.Shared;
 
 namespace VueAdmin.HttpApi.Controllers
 {
     /// <summary>
-    /// Menu接口
+    /// Role接口
     /// </summary>
     [ApiController]
     [Route("[controller]")]
     [ApiExplorerSettings(GroupName = VueAdminConsts.Grouping.GroupName_v1)]
-    public class MenuController : AbpController
+    public class RoleController : AbpController
     {
-        private readonly IMenuService _menuService;
+        private readonly IRoleService _roleService;
 
-        public MenuController(IMenuService menuService)
+        public RoleController(IRoleService roleService)
         {
-            _menuService = menuService;
+            _roleService = roleService;
         }
 
         /// <summary>
@@ -34,65 +34,65 @@ namespace VueAdmin.HttpApi.Controllers
         [Route("query")]
         public async Task<ServiceResult> QueryListAsync(int pageIndex, int pageSize, string query)
         {
-            var result = await _menuService.QueryList(pageIndex, pageSize, query);
+            var result = await _roleService.QueryList(pageIndex, pageSize, query);
             return result;
         }
 
         /// <summary>
-        /// 提交Menu
+        /// 提交Role
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
         [HttpPost]
-        [Route("submitMenu")]
-        public async Task<ServiceResult> SubmitAsync([FromBody] MenuInput input)
+        [Route("submitRole")]
+        public async Task<ServiceResult> SubmitAsync([FromBody] RoleInput input)
         {
             if (!string.IsNullOrWhiteSpace(input.Id))
             {
-                // 修改
-                return await _menuService.UpdateAsync(input.Id, input);
+                return await _roleService.UpdateAsync(input.Id, input);
             }
-            // 添加
-            return await _menuService.AddAsync(input);
+            else
+            {
+                return await _roleService.AddAsync(input);
+            }
         }
 
         /// <summary>
-        /// 获取Menu
+        /// 获取Role
         /// </summary>
         /// <param name="id">主键</param>
         /// <returns></returns>
         [HttpGet]
-        [Route("getMenu")]
-        public async Task<ServiceResult> GetMenuAsync(string id)
+        [Route("getRole")]
+        public async Task<ServiceResult> GetRoleAsync(string id)
         {
-            var result = await _menuService.GetMenuAsync(id);
+            var result = await _roleService.GetRoleAsync(id);
             return result;
         }
 
         /// <summary>
-        /// 批量删除Menu
+        /// 批量删除Role
         /// </summary>
         /// <param name="ids">主键</param>
         /// <returns></returns>
         [HttpGet]
-        [Route("deleteMenu")]
+        [Route("deleteRole")]
         public async Task<ServiceResult> DeleteAsync(string[] ids)
         {
-            var result = await _menuService.DeleteAsync(ids);
+            var result = await _roleService.DeleteAsync(ids);
             return result;
         }
 
         /// <summary>
-        /// 修改Menu状态
+        /// 批量修改Role状态
         /// </summary>
-        /// <param name="id">主键</param>
-        /// <param name="enabled">状态</param>
+        /// <param name="ids">主键</param>
         /// <returns></returns>
         [HttpGet]
         [Route("editEnabled")]
-        public async Task<ServiceResult> EditEnabledAsync(string id, bool enabled)
+        public async Task<ServiceResult> EditRangeEnabledAsync(string[] ids)
         {
-            var result = await _menuService.EditEnabledAsync(id, enabled);
+            var result = await _roleService.EditRangeEnabledAsync(ids);
             return result;
         }
     }

@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using VueAdmin.Application.Contracts.System.Logging;
 using VueAdmin.Common.Base;
 
@@ -17,9 +18,9 @@ namespace VueAdmin.Application.System.Logging
         /// <summary>
         /// 添加
         /// </summary>
-        /// <param name="input"></param>
+        /// <param name="ex"></param>
         /// <returns></returns>
-        Task<ServiceResult> AddAsync(LogInput input);
+        Task AddAsync(Exception ex);
 
         /// <summary>
         /// 获取Log信息

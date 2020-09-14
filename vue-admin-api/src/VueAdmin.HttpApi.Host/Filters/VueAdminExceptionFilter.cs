@@ -1,5 +1,8 @@
-﻿using log4net;
+﻿using System.Threading.Tasks;
+using log4net;
 using Microsoft.AspNetCore.Mvc.Filters;
+using VueAdmin.Application.System.Logging;
+using VueAdmin.EntityFrameworkCore.Repositories.Logging;
 
 namespace VueAdmin.HttpApi.Host.Filters
 {
@@ -7,7 +10,7 @@ namespace VueAdmin.HttpApi.Host.Filters
     {
         private readonly ILog _log;
 
-        public VueAdminExceptionFilter()
+        public VueAdminExceptionFilter(ILogService logService)
         {
             _log = LogManager.GetLogger(typeof(VueAdminExceptionFilter));
         }

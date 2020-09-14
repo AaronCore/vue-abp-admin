@@ -40,19 +40,18 @@ namespace VueAdmin.Application.System.Logging
         /// <summary>
         /// 添加
         /// </summary>
-        /// <param name="input"></param>
+        /// <param name="ex"></param>
         /// <returns></returns>
-        public async Task<ServiceResult> AddAsync(LogInput input)
+        public async Task AddAsync(Exception ex)
         {
-            var result = new ServiceResult();
-
-            var entity = ObjectMapper.Map<LogInput, LogEntity>(input);
-            entity.CreateTime = DateTime.Now;
-
+            var entity = new LogEntity
+            {
+                Message = ex.Message,
+                StackTrace = !string.IsNullOrWhiteSpace(ex.StackTrace) ? ex.StackTrace : null,
+                Exception = ex.ToString(),
+                CreateTime = DateTime.Now
+            };
             await _logRepository.InsertAsync(entity, true);
-
-            result.IsSuccess();
-            return result;
         }
 
         /// <summary>
