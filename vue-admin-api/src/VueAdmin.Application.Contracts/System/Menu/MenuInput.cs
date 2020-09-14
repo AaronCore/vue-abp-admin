@@ -1,4 +1,4 @@
-﻿namespace VueAdmin.Application.Contracts.Menu
+﻿namespace VueAdmin.Application.Contracts.System.Menu
 {
     public class MenuInput
     {

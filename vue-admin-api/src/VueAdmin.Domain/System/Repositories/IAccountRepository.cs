@@ -1,7 +1,7 @@
 ﻿using System;
 using Volo.Abp.Domain.Repositories;
 
-namespace VueAdmin.Domain.Account.Repositories
+namespace VueAdmin.Domain.System.Repositories
 {
     /// <summary>
     /// IAccountRepository

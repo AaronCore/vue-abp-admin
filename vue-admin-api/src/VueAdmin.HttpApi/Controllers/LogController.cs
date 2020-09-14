@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc;
-using VueAdmin.Application.Contracts.Logging;
-using VueAdmin.Application.Logging;
+using VueAdmin.Application.Contracts.System.Logging;
+using VueAdmin.Application.System.Logging;
 using VueAdmin.Common.Base;
 using VueAdmin.Domain.Shared;
 

@@ -1,14 +1,22 @@
 ﻿using System;
 using Volo.Abp.Domain.Entities;
 
-namespace VueAdmin.Domain.Role
+namespace VueAdmin.Domain.System
 {
-    public class RoleEntity : Entity<Guid>
+    public class AccountEntity : Entity<Guid>
     {
         /// <summary>
-        /// 角色名称
+        /// 登录账号
         /// </summary>
-        public string Name { get; set; }
+        public string Account { get; set; }
+        /// <summary>
+        /// 登录密码
+        /// </summary>
+        public string Password { get; set; }
+        /// <summary>
+        /// 角色Id
+        /// </summary>
+        public int RoleId { set; get; }
         /// <summary>
         /// 排序
         /// </summary>

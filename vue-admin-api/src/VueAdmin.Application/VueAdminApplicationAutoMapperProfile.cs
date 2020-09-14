@@ -1,8 +1,7 @@
 ﻿using AutoMapper;
-using VueAdmin.Domain.Logging;
-using VueAdmin.Domain.Menu;
-using VueAdmin.Application.Contracts.Logging;
-using VueAdmin.Application.Contracts.Menu;
+using VueAdmin.Application.Contracts.System.Logging;
+using VueAdmin.Application.Contracts.System.Menu;
+using VueAdmin.Domain.System;
 
 namespace VueAdmin.Application
 {

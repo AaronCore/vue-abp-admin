@@ -1,7 +1,7 @@
 ﻿using System;
 using Volo.Abp.Domain.Entities;
 
-namespace VueAdmin.Domain.Role
+namespace VueAdmin.Domain.System
 {
     public class RoleMenuEntity : Entity<Guid>
     {

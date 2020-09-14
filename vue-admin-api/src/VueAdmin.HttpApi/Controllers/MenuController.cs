@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc;
-using VueAdmin.Application.Contracts.Menu;
-using VueAdmin.Application.Menu;
+using VueAdmin.Application.Contracts.System.Menu;
+using VueAdmin.Application.System.Menu;
 using VueAdmin.Common.Base;
 using VueAdmin.Domain.Shared;
 

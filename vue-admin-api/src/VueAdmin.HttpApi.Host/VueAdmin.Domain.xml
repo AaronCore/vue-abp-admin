@@ -4,56 +4,6 @@
         <name>VueAdmin.Domain</name>
     </assembly>
     <members>
-        <member name="P:VueAdmin.Domain.Account.AccountEntity.Account">
-            <summary>
-            登录账号
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Account.AccountEntity.Password">
-            <summary>
-            登录密码
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Account.AccountEntity.RoleId">
-            <summary>
-            角色Id
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Account.AccountEntity.Sort">
-            <summary>
-            排序
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Account.AccountEntity.Enabled">
-            <summary>
-            是否启用
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Account.AccountEntity.EditTime">
-            <summary>
-            编辑时间
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Account.AccountEntity.Editor">
-            <summary>
-            编辑人
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Account.AccountEntity.CreateTime">
-            <summary>
-            创建时间
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Account.AccountEntity.Creater">
-            <summary>
-            创建人
-            </summary>
-        </member>
-        <member name="T:VueAdmin.Domain.Account.Repositories.IAccountRepository">
-            <summary>
-            IAccountRepository
-            </summary>
-        </member>
         <member name="T:VueAdmin.Domain.Configurations.AppSettings">
             <summary>
             appsettings.json配置文件数据读取类
@@ -204,116 +154,6 @@
             Application name
             </summary>
         </member>
-        <member name="T:VueAdmin.Domain.Logging.Repositories.ILogRepository">
-            <summary>
-            ILogRepository
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Menu.MenuEntity.ParentId">
-            <summary>
-            父级Id
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Menu.MenuEntity.Name">
-            <summary>
-            菜单名称
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Menu.MenuEntity.Path">
-            <summary>
-            菜单地址
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Menu.MenuEntity.Code">
-            <summary>
-            菜单编码
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Menu.MenuEntity.Icon">
-            <summary>
-            图标
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Menu.MenuEntity.Sort">
-            <summary>
-            排序
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Menu.MenuEntity.Enabled">
-            <summary>
-            是否启用
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Menu.MenuEntity.EditTime">
-            <summary>
-            编辑时间
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Menu.MenuEntity.Editor">
-            <summary>
-            编辑人
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Menu.MenuEntity.CreateTime">
-            <summary>
-            创建时间
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Menu.MenuEntity.Creater">
-            <summary>
-            创建人
-            </summary>
-        </member>
-        <member name="T:VueAdmin.Domain.Menu.Repositories.IMenuRepository">
-            <summary>
-            IMenuRepository
-            </summary>
-        </member>
-        <member name="T:VueAdmin.Domain.Role.Repositories.IRoleMenuRepository">
-            <summary>
-            IRoleMenuRepository
-            </summary>
-        </member>
-        <member name="T:VueAdmin.Domain.Role.Repositories.IRoleRepository">
-            <summary>
-            IRoleRepository
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Role.RoleEntity.Name">
-            <summary>
-            角色名称
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Role.RoleEntity.Sort">
-            <summary>
-            排序
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Role.RoleEntity.Enabled">
-            <summary>
-            是否启用
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Role.RoleEntity.EditTime">
-            <summary>
-            编辑时间
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Role.RoleEntity.Editor">
-            <summary>
-            编辑人
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Role.RoleEntity.CreateTime">
-            <summary>
-            创建时间
-            </summary>
-        </member>
-        <member name="P:VueAdmin.Domain.Role.RoleEntity.Creater">
-            <summary>
-            创建人
-            </summary>
-        </member>
         <member name="F:VueAdmin.Domain.Settings.VueAdminSettings._config">
             <summary>
             配置文件的根节点
@@ -357,6 +197,166 @@
         <member name="P:VueAdmin.Domain.Settings.VueAdminSettings.Caching.IsOpen">
             <summary>
             是否开启
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.AccountEntity.Account">
+            <summary>
+            登录账号
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.AccountEntity.Password">
+            <summary>
+            登录密码
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.AccountEntity.RoleId">
+            <summary>
+            角色Id
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.AccountEntity.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.AccountEntity.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.AccountEntity.EditTime">
+            <summary>
+            编辑时间
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.AccountEntity.Editor">
+            <summary>
+            编辑人
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.AccountEntity.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.AccountEntity.Creater">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.MenuEntity.ParentId">
+            <summary>
+            父级Id
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.MenuEntity.Name">
+            <summary>
+            菜单名称
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.MenuEntity.Path">
+            <summary>
+            菜单地址
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.MenuEntity.Code">
+            <summary>
+            菜单编码
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.MenuEntity.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.MenuEntity.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.MenuEntity.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.MenuEntity.EditTime">
+            <summary>
+            编辑时间
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.MenuEntity.Editor">
+            <summary>
+            编辑人
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.MenuEntity.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.MenuEntity.Creater">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="T:VueAdmin.Domain.System.Repositories.IAccountRepository">
+            <summary>
+            IAccountRepository
+            </summary>
+        </member>
+        <member name="T:VueAdmin.Domain.System.Repositories.ILogRepository">
+            <summary>
+            ILogRepository
+            </summary>
+        </member>
+        <member name="T:VueAdmin.Domain.System.Repositories.IMenuRepository">
+            <summary>
+            IMenuRepository
+            </summary>
+        </member>
+        <member name="T:VueAdmin.Domain.System.Repositories.IRoleMenuRepository">
+            <summary>
+            IRoleMenuRepository
+            </summary>
+        </member>
+        <member name="T:VueAdmin.Domain.System.Repositories.IRoleRepository">
+            <summary>
+            IRoleRepository
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.RoleEntity.Name">
+            <summary>
+            角色名称
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.RoleEntity.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.RoleEntity.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.RoleEntity.EditTime">
+            <summary>
+            编辑时间
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.RoleEntity.Editor">
+            <summary>
+            编辑人
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.RoleEntity.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:VueAdmin.Domain.System.RoleEntity.Creater">
+            <summary>
+            创建人
             </summary>
         </member>
     </members>

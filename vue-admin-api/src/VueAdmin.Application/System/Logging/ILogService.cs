@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
-using VueAdmin.Application.Contracts.Logging;
+using VueAdmin.Application.Contracts.System.Logging;
 using VueAdmin.Common.Base;
 
-namespace VueAdmin.Application.Logging
+namespace VueAdmin.Application.System.Logging
 {
     public interface ILogService
     {

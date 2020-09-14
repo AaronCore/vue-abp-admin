@@ -54,7 +54,7 @@
             <param name="pageSize">分页大小</param>
             <returns></returns>
         </member>
-        <member name="M:VueAdmin.HttpApi.Controllers.LogController.AddLogAsync(VueAdmin.Application.Contracts.Logging.LogInput)">
+        <member name="M:VueAdmin.HttpApi.Controllers.LogController.AddLogAsync(VueAdmin.Application.Contracts.System.Logging.LogInput)">
             <summary>
             添加Log
             </summary>
@@ -82,7 +82,7 @@
             <param name="query">查询条件</param>
             <returns></returns>
         </member>
-        <member name="M:VueAdmin.HttpApi.Controllers.MenuController.SubmitAsync(VueAdmin.Application.Contracts.Menu.MenuInput)">
+        <member name="M:VueAdmin.HttpApi.Controllers.MenuController.SubmitAsync(VueAdmin.Application.Contracts.System.Menu.MenuInput)">
             <summary>
             提交Log
             </summary>

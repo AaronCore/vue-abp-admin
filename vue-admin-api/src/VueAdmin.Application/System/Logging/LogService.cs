@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using VueAdmin.Application.Contracts.Logging;
+using VueAdmin.Application.Contracts.System.Logging;
 using VueAdmin.Common.Base;
 using VueAdmin.Common.Extensions;
-using VueAdmin.Domain.Logging;
-using VueAdmin.Domain.Logging.Repositories;
+using VueAdmin.Domain.System;
+using VueAdmin.Domain.System.Repositories;
 
-namespace VueAdmin.Application.Logging
+namespace VueAdmin.Application.System.Logging
 {
     public class LogService : VueAdminApplicationService, ILogService
     {

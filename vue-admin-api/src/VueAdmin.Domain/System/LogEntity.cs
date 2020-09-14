@@ -1,7 +1,7 @@
 ﻿using System;
 using Volo.Abp.Domain.Entities;
 
-namespace VueAdmin.Domain.Logging
+namespace VueAdmin.Domain.System
 {
     public class LogEntity : Entity<Guid>
     {

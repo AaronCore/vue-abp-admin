@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace VueAdmin.Application.Contracts.Logging
+﻿namespace VueAdmin.Application.Contracts.System.Logging
 {
     public class LogOut
     {

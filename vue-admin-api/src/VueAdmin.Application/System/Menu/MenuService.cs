@@ -2,16 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
-using VueAdmin.Application.Contracts.Menu;
+using VueAdmin.Application.Contracts.System.Menu;
 using VueAdmin.Common.Base;
 using VueAdmin.Common.Extensions;
-using VueAdmin.Domain.Logging.Repositories;
-using VueAdmin.Domain.Menu;
-using VueAdmin.Domain.Menu.Repositories;
+using VueAdmin.Domain.System;
+using VueAdmin.Domain.System.Repositories;
 
-namespace VueAdmin.Application.Menu
+namespace VueAdmin.Application.System.Menu
 {
     public class MenuService : VueAdminApplicationService, IMenuService
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 using Volo.Abp.Domain.Repositories.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore;
-using VueAdmin.Domain.Account;
-using VueAdmin.Domain.Account.Repositories;
+using VueAdmin.Domain.System;
+using VueAdmin.Domain.System.Repositories;
 using VueAdmin.EntityFrameworkCore.EntityFrameworkCore;
 
 namespace VueAdmin.EntityFrameworkCore.Repositories.Account

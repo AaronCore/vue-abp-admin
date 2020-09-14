@@ -1,10 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Volo.Abp;
-using VueAdmin.Domain.Account;
-using VueAdmin.Domain.Logging;
-using VueAdmin.Domain.Menu;
-using VueAdmin.Domain.Role;
 using VueAdmin.Domain.Shared;
+using VueAdmin.Domain.System;
 
 namespace VueAdmin.EntityFrameworkCore.EntityFrameworkCore
 {

@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
-using VueAdmin.Application.Contracts.Menu;
+using VueAdmin.Application.Contracts.System.Menu;
 using VueAdmin.Common.Base;
 
-namespace VueAdmin.Application.Menu
+namespace VueAdmin.Application.System.Menu
 {
     public interface IMenuService
     {
