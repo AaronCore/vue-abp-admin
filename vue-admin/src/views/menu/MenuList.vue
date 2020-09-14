@@ -113,13 +113,13 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       addDialogVisible: false,
       queryInfo: {
         query: '',
         pageIndex: 1,
-        pageSize: 20,
+        pageSize: 20
       },
       total: 0,
       menuForm: {
@@ -130,10 +130,10 @@ export default {
         code: '',
         icon: '',
         sort: '',
-        enabled: '',
+        enabled: ''
       },
       menuFormRules: {
-        name: [{ required: true, message: '请输入菜单名称', trigger: 'blur' }],
+        name: [{ required: true, message: '请输入菜单名称', trigger: 'blur' }]
       },
       parentMenuOptions: [],
       tableData: [
@@ -149,15 +149,15 @@ export default {
               name: '菜单列表',
               path: '',
               createTime: '',
-              enabled: true,
-            },
-          ],
-        },
-      ],
+              enabled: true
+            }
+          ]
+        }
+      ]
     }
   },
   methods: {
-    async getMenuList() {
+    async getMenuList () {
       const { data: res } = await this.$http.get('', { params: this.queryInfo })
       if (res.meta.status !== 200) {
         return this.$message.error('获取列表失败...')
@@ -165,7 +165,7 @@ export default {
         this.total = res.data.total
       }
     },
-    addMenu() {
+    addMenu () {
       this.$refs.menuFormRef.validate(async (valid) => {
         if (!valid) return
         const { data: res } = await this.$http.post('', this.menuForm)
@@ -175,7 +175,7 @@ export default {
         this.$message.success('操作成功...')
       })
     },
-    async edit(id) {
+    async edit (id) {
       const { data: res } = await this.$http.get('')
       if (res.meta.status !== 200) {
         this.$message.error('查询失败...')
@@ -183,35 +183,36 @@ export default {
       this.menuForm = res.data
       this.addDialogVisible = true
     },
-    async del(id) {
+    async del (id) {
       const { data: res } = await this.$http.get('')
       if (res.meta.status !== 200) {
         this.$message.error('删除失败...')
       }
     },
-    async enabledChanged(row) {
+    async enabledChanged (row) {
       const { data: res } = await this.$http.get('')
       if (res.meta.status !== 200) {
+        row.enabled=!row.enabled
         return this.$message.error('查询用户信息失败！')
       }
     },
-    dialogClosed() {
+    dialogClosed () {
       this.$refs.menuFormRef.resetFields()
     },
     // 监听 pageSize 改变的事件
-    handleSizeChange(size) {
+    handleSizeChange (size) {
       this.queryInfo.pageSize = size
       this.getMenuList()
     },
     // 监听 pageIndex 改变的事件
-    handleCurrentChange(index) {
+    handleCurrentChange (index) {
       this.queryInfo.pageIndex = index
       this.getMenuList()
-    },
+    }
   },
-  created() {
+  created () {
     // this.getMenuList()
-  },
+  }
 }
 </script>
 

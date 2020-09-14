@@ -126,13 +126,13 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       addDialogVisible: false,
       queryInfo: {
         query: '',
         pageIndex: 1,
-        pageSize: 20,
+        pageSize: 20
       },
       total: 0,
       accountForm: {
@@ -141,25 +141,25 @@ export default {
         account: null,
         password: null,
         sort: 0,
-        enabled: true,
+        enabled: true
       },
       accountFormRules: {
         name: [{ required: true, message: '请输入名称', trigger: 'blur' }],
         account: [
           { required: true, message: '请输入登录账号名称', trigger: 'blur' },
           { min: 3, max: 10, message: '长度在 3 到 10 个字符' },
-          { pattern: /^[0-9a-zA-Z_]+$/, message: '登录账号名必须是英文数字组合' },
+          { pattern: /^[0-9a-zA-Z_]+$/, message: '登录账号名必须是英文数字组合' }
         ],
-        roleId: [{ required: true, message: '请选择一个角色', trigger: 'blur' }],
+        roleId: [{ required: true, message: '请选择一个角色', trigger: 'blur' }]
       },
       required: false,
       roleOptions: [],
       ids: [],
-      tableData: [],
+      tableData: []
     }
   },
   methods: {
-    async getRoleList() {
+    async getRoleList () {
       const { data: res } = await this.$http.get('', { params: this.queryInfo })
       if (res.meta.status !== 200) {
         return this.$message.error('获取列表失败...')
@@ -167,7 +167,7 @@ export default {
         this.total = res.data.total
       }
     },
-    async dels() {
+    async dels () {
       if (this.ids.length <= 0) {
         this.$message.warning('请选择数据...')
         return
@@ -178,7 +178,7 @@ export default {
       }
       this.$message.success('操作成功...')
     },
-    async enableds() {
+    async enableds () {
       if (this.ids.length <= 0) {
         this.$message.warning('请选择数据...')
         return
@@ -189,7 +189,7 @@ export default {
       }
       this.$message.success('操作成功...')
     },
-    async addRole() {
+    async addRole () {
       this.$refs.accountFormRef.validate(async (valid) => {
         if (!valid) return
         const { data: res } = await this.$http.post('', this.menuForm)
@@ -199,33 +199,34 @@ export default {
         this.$message.success('操作成功...')
       })
     },
-    dialogClosed() {
+    dialogClosed () {
       this.$refs.accountFormRef.resetFields()
     },
-    checkSelect(row, index) {
-      return row.name == 'admin' ? false : true
+    checkSelect (row, index) {
+      return row.name != 'admin'
     },
-    selectionChange() {
+    selectionChange () {
       var idArr = []
       if (rows) {
-        rows.forEach((row) => {
+        for (let i = 0; i < rows.length; i++) {
+          const row = array[i];
           idArr.push(row.id)
-        })
+        }
         this.ids = idArr
       }
     },
     // 监听 pageSize 改变的事件
-    handleSizeChange(size) {
+    handleSizeChange (size) {
       this.queryInfo.pageSize = size
       this.getRoleList()
     },
     // 监听 pageIndex 改变的事件
-    handleCurrentChange(index) {
+    handleCurrentChange (index) {
       this.queryInfo.pageIndex = index
       this.getRoleList()
-    },
+    }
   },
-  created() {},
+  created () {}
 }
 </script>
 

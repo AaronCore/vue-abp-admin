@@ -107,30 +107,30 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       addDialogVisible: false,
       queryInfo: {
         query: '',
         pageIndex: 1,
-        pageSize: 20,
+        pageSize: 20
       },
       total: 0,
       roleForm: {
         id: 0,
         name: '',
         sort: 0,
-        enabled: true,
+        enabled: true
       },
       roleFormRules: {
-        name: [{ required: true, message: '请输入菜单名称', trigger: 'blur' }],
+        name: [{ required: true, message: '请输入菜单名称', trigger: 'blur' }]
       },
       ids: [],
-      tableData: [],
+      tableData: []
     }
   },
   methods: {
-    async getRoleList() {
+    async getRoleList () {
       const { data: res } = await this.$http.get('', { params: this.queryInfo })
       if (res.meta.status !== 200) {
         return this.$message.error('获取列表失败...')
@@ -138,7 +138,7 @@ export default {
         this.total = res.data.total
       }
     },
-    async dels() {
+    async dels () {
       if (this.ids.length <= 0) {
         this.$message.warning('请选择数据...')
         return
@@ -149,7 +149,7 @@ export default {
       }
       this.$message.success('操作成功...')
     },
-    async enableds() {
+    async enableds () {
       if (this.ids.length <= 0) {
         this.$message.warning('请选择数据...')
         return
@@ -160,7 +160,7 @@ export default {
       }
       this.$message.success('操作成功...')
     },
-    async addRole() {
+    async addRole () {
       this.$refs.roleFormRef.validate(async (valid) => {
         if (!valid) return
         const { data: res } = await this.$http.post('', this.menuForm)
@@ -170,33 +170,34 @@ export default {
         this.$message.success('操作成功...')
       })
     },
-    dialogClosed() {
+    dialogClosed () {
       this.$refs.roleFormRef.resetFields()
     },
-    checkSelect(row, index) {
-      return row.name == 'admin' ? false : true
+    checkSelect (row, index) {
+      return row.name != 'admin'
     },
-    selectionChange() {
+    selectionChange () {
       var idArr = []
       if (rows) {
-        rows.forEach((row) => {
+        for (let i = 0; i < rows.length; i++) {
+          const row = array[i];
           idArr.push(row.id)
-        })
+        }
         this.ids = idArr
       }
     },
     // 监听 pageSize 改变的事件
-    handleSizeChange(size) {
+    handleSizeChange (size) {
       this.queryInfo.pageSize = size
       this.getRoleList()
     },
     // 监听 pageIndex 改变的事件
-    handleCurrentChange(index) {
+    handleCurrentChange (index) {
       this.queryInfo.pageIndex = index
       this.getRoleList()
-    },
+    }
   },
-  created() {},
+  created () {}
 }
 </script>
 
