@@ -83,26 +83,6 @@
             公共接口
             </summary>
         </member>
-        <member name="T:VueAdmin.HttpApi.Controllers.LogController">
-            <summary>
-            Log接口
-            </summary>
-        </member>
-        <member name="M:VueAdmin.HttpApi.Controllers.LogController.QueryListAsync(System.Int32,System.Int32)">
-            <summary>
-            列表
-            </summary>
-            <param name="pageIndex">分页下标</param>
-            <param name="pageSize">分页大小</param>
-            <returns></returns>
-        </member>
-        <member name="M:VueAdmin.HttpApi.Controllers.LogController.GetLogAsync(System.String)">
-            <summary>
-            获取Log
-            </summary>
-            <param name="id">主键Id</param>
-            <returns></returns>
-        </member>
         <member name="T:VueAdmin.HttpApi.Controllers.MenuController">
             <summary>
             Menu接口

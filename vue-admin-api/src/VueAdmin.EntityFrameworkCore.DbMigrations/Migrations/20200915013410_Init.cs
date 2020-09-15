@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace VueAdmin.EntityFrameworkCore.DbMigrations.Migrations
 {
-    public partial class Initial : Migration
+    public partial class Init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -28,26 +28,11 @@ namespace VueAdmin.EntityFrameworkCore.DbMigrations.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "VA_Logs",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(nullable: false),
-                    Message = table.Column<string>(nullable: true),
-                    Exception = table.Column<string>(nullable: true),
-                    StackTrace = table.Column<string>(nullable: true),
-                    CreateTime = table.Column<DateTime>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_VA_Logs", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "VA_Menus",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
-                    ParentId = table.Column<int>(nullable: false),
+                    ParentId = table.Column<string>(nullable: true),
                     Name = table.Column<string>(nullable: true),
                     Path = table.Column<string>(nullable: true),
                     Code = table.Column<string>(nullable: true),
@@ -100,9 +85,6 @@ namespace VueAdmin.EntityFrameworkCore.DbMigrations.Migrations
         {
             migrationBuilder.DropTable(
                 name: "VA_Accounts");
-
-            migrationBuilder.DropTable(
-                name: "VA_Logs");
 
             migrationBuilder.DropTable(
                 name: "VA_Menus");

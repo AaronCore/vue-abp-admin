@@ -9,7 +9,7 @@
         /// <summary>
         /// 父级Id
         /// </summary>
-        public int ParentId { set; get; }
+        public string ParentId { set; get; }
         /// <summary>
         /// 菜单名称
         /// </summary>

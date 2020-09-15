@@ -38,12 +38,6 @@ namespace VueAdmin.EntityFrameworkCore.EntityFrameworkCore
                 b.ToTable(VueAdminConsts.DbTablePrefix + DbTableName.RoleMenu);
                 b.HasKey(x => x.Id);
             });
-
-            builder.Entity<LogEntity>(b =>
-            {
-                b.ToTable(VueAdminConsts.DbTablePrefix + DbTableName.Log);
-                b.HasKey(x => x.Id);
-            });
         }
     }
 }

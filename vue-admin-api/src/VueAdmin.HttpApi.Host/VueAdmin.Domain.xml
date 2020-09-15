@@ -304,11 +304,6 @@
             IAccountRepository
             </summary>
         </member>
-        <member name="T:VueAdmin.Domain.System.Repositories.ILogRepository">
-            <summary>
-            ILogRepository
-            </summary>
-        </member>
         <member name="T:VueAdmin.Domain.System.Repositories.IMenuRepository">
             <summary>
             IMenuRepository
